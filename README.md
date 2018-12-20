@@ -1,5 +1,5 @@
 # fedora/dotnet docker image
-fedora image to compile and excute csharp programs.
+fedora image to compile and execute csharp programs.
 based on `fedora:29` image using `mono`.
 
 ## How to run
@@ -25,10 +25,11 @@ where:
     
     
 ### compile multiple times
-Loading a container each compilation may be really exhausting. So you can run a container in detached mode (in background) and execute sequencial compilation withour reloading a container each time.
+Loading a container each compilation may be really exhausting. So you can run a container in detached mode (in background) and execute sequential compilation without reloading a container each time.
 - run in background: `docker run -v $DIR:/dotnet -e FILE=$FILE fedora/dotnet --name <container_name> -it -d bash` 
 - execute commands: `docker exec <container_name> <command>`
 
 ## What's next?
 - [ ] make a lightweight image
 - [ ] add support for multiple dotnet applications (asp, core, microsfot tools)
+ 
