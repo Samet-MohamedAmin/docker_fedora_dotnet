@@ -15,4 +15,3 @@ after_success:
   - docker build . -t sametma/dotnet
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_ID --password-stdin
   - docker push sametma/dotnet
-
